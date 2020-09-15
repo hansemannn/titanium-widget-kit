@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A9F668A250A26BD00ED233D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9F6689250A26BD00ED233D /* WidgetKit.framework */; };
+		3AB7FF892511636E00E508A5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB7FF882511636E00E508A5 /* WidgetKit.framework */; };
 		3AE34C56250B8EAA006CFF87 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE34C55250B8EAA006CFF87 /* TitaniumKit.xcframework */; };
 		DB34CDE0207B998A005F8E8C /* TiWidgetkitModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiWidgetkitModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiWidgetkitModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiWidgetkitModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3A9F6689250A26BD00ED233D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/iOSSupport/System/Library/Frameworks/WidgetKit.framework; sourceTree = DEVELOPER_DIR; };
+		3AB7FF882511636E00E508A5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3AE34C55250B8EAA006CFF87 /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "$(TITANIUM_SDK)/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		DB34CDDE207B998A005F8E8C /* TiWidgetkitModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiWidgetkitModuleAssets.m; path = Classes/TiWidgetkitModuleAssets.m; sourceTree = SOURCE_ROOT; };
 		DB34CDDF207B998A005F8E8C /* TiWidgetkitModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiWidgetkitModuleAssets.h; path = Classes/TiWidgetkitModuleAssets.h; sourceTree = SOURCE_ROOT; };
@@ -37,8 +38,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE34C56250B8EAA006CFF87 /* TitaniumKit.xcframework in Frameworks */,
-				3A9F668A250A26BD00ED233D /* WidgetKit.framework in Frameworks */,
 				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
+				3AB7FF892511636E00E508A5 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +78,7 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AB7FF882511636E00E508A5 /* WidgetKit.framework */,
 				3AE34C55250B8EAA006CFF87 /* TitaniumKit.xcframework */,
 				3A9F6689250A26BD00ED233D /* WidgetKit.framework */,
 				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
@@ -139,7 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DBB66220208481A400EAD6D9 /* PBXTargetDependency */,
 			);
 			name = TiWidgetkit;
 			productName = TiWidgetkit;
@@ -209,13 +210,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DBB66220208481A400EAD6D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TitaniumKit;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DB52E2301E9CCD7000AAAEE0 /* Debug */ = {
@@ -351,6 +345,7 @@
 			baseConfigurationReference = DB52E2411E9CD09900AAAEE0 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -386,9 +381,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcelerator.titanium-widget-kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Titanium";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Debug;
@@ -397,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB52E2411E9CD09900AAAEE0 /* titanium.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -429,8 +427,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcelerator.titanium-widget-kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Titanium";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
 			};
 			name = Release;
