@@ -7,8 +7,11 @@
 //
 
 import UIKit
-import WidgetKit
 import TitaniumKit
+
+#if !targetEnvironment(macCatalyst)
+import WidgetKit
+#endif
 
 @objc(TiWidgetkitModule)
 class TiWidgetkitModule: TiModule {
@@ -25,6 +28,10 @@ class TiWidgetkitModule: TiModule {
 
   @objc(reloadAllTimelines:)
   func reloadAllTimelines(unused: Array<Any>?) {
+    #if !targetEnvironment(macCatalyst)
     WidgetCenter.shared.reloadAllTimelines()
+    #else
+    print("WidgetKit is only available on iOS so far")
+    #endif
   }
 }

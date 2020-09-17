@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AB7FF892511636E00E508A5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB7FF882511636E00E508A5 /* WidgetKit.framework */; };
+		3AB7FF892511636E00E508A5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB7FF882511636E00E508A5 /* WidgetKit.framework */; platformFilter = ios; };
 		3AE34C56250B8EAA006CFF87 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE34C55250B8EAA006CFF87 /* TitaniumKit.xcframework */; };
 		DB34CDE0207B998A005F8E8C /* TiWidgetkitModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiWidgetkitModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiWidgetkitModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiWidgetkitModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -381,7 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcelerator.titanium-widget-kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Titanium";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -427,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcelerator.titanium-widget-kit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Titanium";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
