@@ -15,4 +15,5 @@ name: titanium-widget-kit
 moduleid: ti.widgetkit
 guid: 4806f1ee-d99b-44b5-9aa4-68c3955d97ce
 platform: iphone
+mac: false
 minsdk: 9.2.0
