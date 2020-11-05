@@ -13,6 +13,7 @@ import TitaniumKit
 import WidgetKit
 #endif
 
+@available(iOS 14.0, *)
 @objc(TiWidgetkitModule)
 class TiWidgetkitModule: TiModule {
 
