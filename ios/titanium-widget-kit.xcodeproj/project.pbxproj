@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3A583C16251A190400761A37 /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A583C15251A190400761A37 /* TitaniumKit.xcframework */; };
-		3A583C17251A190400761A37 /* TitaniumKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A583C15251A190400761A37 /* TitaniumKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AB7FF892511636E00E508A5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB7FF882511636E00E508A5 /* WidgetKit.framework */; platformFilter = ios; };
 		DB34CDE0207B998A005F8E8C /* TiWidgetkitModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiWidgetkitModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiWidgetkitModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiWidgetkitModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,20 +16,6 @@
 		DB52E2431E9CD0F800AAAEE0 /* TiWidgetkitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52E2421E9CD0F800AAAEE0 /* TiWidgetkitModule.swift */; };
 		DB75E5161E9CD59000809B2D /* TiWidgetkit.h in Headers */ = {isa = PBXBuildFile; fileRef = DB75E5151E9CD58100809B2D /* TiWidgetkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3A583C18251A190400761A37 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3A583C17251A190400761A37 /* TitaniumKit.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A583C15251A190400761A37 /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "$(TITANIUM_SDK)/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
@@ -150,7 +135,6 @@
 				DB52E2261E9CCD7000AAAEE0 /* Frameworks */,
 				DB52E2271E9CCD7000AAAEE0 /* Headers */,
 				DB52E2281E9CCD7000AAAEE0 /* Resources */,
-				3A583C18251A190400761A37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,7 +361,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +410,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
