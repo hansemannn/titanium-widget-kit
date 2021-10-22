@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 2.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86 x86_64
+description: titanium-widget-kit
+author: Michael Gangolf
+license: MIT
+copyright: Copyright (c) 2021-present by Michael Gangolf
+
+# these should not be edited
+name: titanium-widget-kit
+moduleid: ti.widgetkit
+guid: 12981dda-fccd-4ec4-b5e3-3ae89461a10f
+platform: android
+minsdk: 9.0.0
